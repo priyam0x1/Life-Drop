@@ -8,6 +8,4 @@ Simple and easy-to-use interface
 
 Built using HTML,CSS & JavaScript
 
-# Author
-
-Priyam Pratim
+# Author : Priyam Pratim
