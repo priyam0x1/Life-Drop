@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+/*  Main Image || Home || About Us || */
+
+.main-img{
+    background-image: linear-gradient(#F48C06, #D00000);
+    height: 100vh;
+    width: 650px;
+    border-top-right-radius: 180rem;
+    border: 2px solid #9D0208;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-img i{
+    font-size: 2.5rem;
+    color: aliceblue;
+}
+
+.be-donor{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2rem;
+    padding: 2rem 2rem;
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.be-donor .donate-tag{
+    font-size: 2.25rem;
+    font-weight: 650;
+    color: white;
+}
+
+.be-donor .donate-desc{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+}
+
+.be-donor .donate-login{
+    text-decoration: none;
+    background-color: white;
+    color: #9D0208;
+    border: 2px solid #9D0208;
+    height: 1.50rem;
+    width: fit-content;
+    padding-left: 1.10rem;
+    padding-right: 1.10rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.55rem;
+    border-radius: 1.25rem;
+    font-size: 1.40rem;
+    font-weight: 600;
+    margin-left: 18rem;
+    transition: 0.3s ease;
+}
+
+.be-donor .donate-login:hover{
+    background-color: #9D0208;
+    color: white;
+    border: 2px solid black;
+}
+
+.home-about{
+    width: 40%;
+    /* border: 2px solid black; */
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+}
+.nav-option{
+    text-decoration: none;
+    font-size: 1.30rem;
+    font-weight: 600;
+    color: #DC2F02;
+    transition: 0.5s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.home-about .active{
+    border-bottom: 3px solid red;
+}
+
+.nav-option:hover{
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+/* Web Details || Find Blood || Register Now || Login */
+
+.web-details{
+    background-color: white;
+    height: 100vh;
+    /* border: 2px solid black; */
+    padding: 1rem 2rem;
+    display: flex;
+    flex: 1;
+}
+
+.find-login{
+    width: 90%;
+    margin-left: 1rem;
+    /* border: 2px solid black; */
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login{
+    border: 2px solid red;
+    height: 1.50rem;
+    width: fit-content;
+    padding-left: 1.10rem;
+    padding-right: 1.10rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.55rem;
+    border-radius: 1.25rem;
+    font-size: 1.40rem;
+}
+
+.login:hover{
+    border: 2px solid #9D0208;
+    background-color: red;
+    color: white;
+}
+
+.get-blood{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2rem;
+    padding: 2rem 2rem;
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.get-tag{
+    font-size: 2.25rem;
+    font-weight: 650;
+}
+
+.get-desc{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.get-login{
+    text-decoration: none;
+    color: red;
+    border: 2px solid red;
+    height: 1.50rem;
+    width: fit-content;
+    padding-left: 1.10rem;
+    padding-right: 1.10rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.55rem;
+    border-radius: 1.25rem;
+    font-size: 1.40rem;
+    font-weight: 600;
+    margin-left: 18rem;
+    transition: 0.3s ease;
+}
+
+.get-login:hover{
+    background-color: red;
+    color: white;
+    border: 2px solid #9D0208;
+}

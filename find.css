@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar Of the Find Blood page */
+
+.nav-container{
+    border-bottom: 2px solid rgba(255, 0, 0, 0.2);
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: aliceblue;
+}
+
+.nav-container .nav-option-container{
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+    height: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-option{
+    height: 30px;
+    text-decoration: none;
+    font-size: 1.60rem;
+    font-weight: 600;
+    color: #DC2F02;
+    transition: 0.5s ease;
+    padding: 3px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-option:hover{
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.nav-container i{
+    font-size: 2rem;
+    color: red;
+    margin-left: 2rem;
+    padding: 1rem 1rem;
+}
+
+.nav-container .active{
+    border-bottom: 3px solid red;
+}
+
+.login{
+    border: 2px solid red;
+    height: 1.50rem;
+    width: fit-content;
+    padding-left: 1.10rem;
+    padding-right: 1.10rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.55rem;
+    border-radius: 1.25rem;
+    font-size: 1.40rem;
+}
+
+.login:hover{
+    border: 2px solid #9D0208;
+    background-color: red;
+    color: white;
+}
+
+/* Find Blood Page || Blood List */
+
+.donor-list{
+    /* background-color: aqua; */
+    height: 515px;
+    width: 62vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    margin-left: 10px;
+}
+
+.donor-list .donor-detail{
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    border-radius: 5px;
+    /* background-color: yellow; */
+    height: 200px;
+    width: 91vw;
+    margin: 1rem;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.donor-list .donor-detail .donor-brief-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.donor-list .donor-detail .donor-full-info{
+    height: 80px;
+    padding-top: 1.70rem;
+    padding-right: 0.1rem;
+    margin-left: 40rem;
+}
+
+.donor-list .donor-detail .donor-full-info a{
+    display: inline-block;
+    color: black;
+    height: 35px;
+    width: 12rem;
+    border: 2px solid red;
+    border-radius: 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.60rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+    padding-top: 0.2rem;
+}
+
+.donor-list .donor-detail .donor-full-info a:hover{
+    border: 2px solid #9D0208;
+    background-color: red;
+    color: white;
+}
