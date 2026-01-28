@@ -1,3 +1,5 @@
+# Life Drop : Blood Donation & Search Platform
+
 Web-based system to connect blood donors with patients
 
 Allows donor registration and blood search by blood group
