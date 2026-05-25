@@ -72,9 +72,55 @@
 }
 
 /* Find Blood Page || Blood List */
+ .top-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
 
-.donor-list{
-    /* background-color: aqua; */
+ .top-row h1{
+    color: #DC2F02;
+    padding: 5px 20px;
+ }
+
+ .top-row a{
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #DC2F02;
+    padding-right: 70px;
+    padding-top: 15px;
+}
+
+ .donor-detail{
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    border-radius: 5px;
+    height: 150px;
+    width: 91vw;
+    margin: 1rem;
+    padding: 1rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ .anchor-tag{
+    text-decoration: none;
+    color: #DC2F02;
+    margin-right: 15px;
+    font-size: 23px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+ }
+
+ form{
+    display: inline-block;
+ }
+
+/* .donor-list{
     height: 515px;
     width: 62vw;
     display: flex;
@@ -86,7 +132,6 @@
 .donor-list .donor-detail{
     border: 2px solid rgba(255, 0, 0, 0.5);
     border-radius: 5px;
-    /* background-color: yellow; */
     height: 200px;
     width: 91vw;
     margin: 1rem;
@@ -130,4 +175,4 @@
     border: 2px solid #9D0208;
     background-color: red;
     color: white;
-}
+} */

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=donor.name%>'s Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/detail.css">
+
+</head>
+<body>
+    <h1><%=donor.name%>'s Details</h1>
+                   <div class="donor-detail">
+                   <div>
+                    <p><strong>ID : </strong><%=donor.id%></p>
+                    <p><strong>Name :</strong> <%=donor.name%></p>
+                    <p><strong>Group :</strong> <%=donor.group%></p>
+                    <p><strong>Phone No.:</strong> +91 <%=donor.ph%></p>
+                    <p><strong>City :</strong> <%=donor.city%></p>
+                    </div>
+                    <div>
+                    <a class="anchor-tag" href="http://localhost:3000/home/find/<%=donor.id%>/edit">Edit Details</a>
+                    <form method="post" action="/home/find/<%=donor.id%>?_method=DELETE">
+                        <button class="anchor-tag" type="submit">Delete</button>
+                    </form>
+                    </div>
+                   </div>
+</body>
+</html>

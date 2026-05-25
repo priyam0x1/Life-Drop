@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="find.css">
+    <link rel="stylesheet" href="/find.css">
 </head>
 <body>
     <div class="find-page">
@@ -20,17 +20,43 @@
             </div>
 
             <div class="nav-option-container">
-            <a href="index.html" class="nav-option">Home</a>
-            <a href="#" class="nav-option">About Us</a>
-            <a href="#" class="nav-option active">Find Blood</a>
-            <a href="register.html" class="nav-option">Register</a>
+            <a href="http://localhost:3000/home" class="nav-option">Home</a>
+            <a href="http://localhost:3000/home/about" class="nav-option">About Us</a>
+            <a href="http://localhost:3000/home/find" class="nav-option active">Find Blood</a>
+            <a href="http://localhost:3000/home/register" class="nav-option">Register</a>
             <a href="#" class="nav-option login">Login</a>
             </div>
         </div>
   
         <!-- Blood Donor List -->
 
-        <div class="donor-list">
+        <div class="top-row">
+            <h1>List Of Blood Donor</h1>
+            <a href="http://localhost:3000/home/find/register">Become a Donor</a>
+        </div>
+
+        <% for(donor of donors) { %>
+            <div class="donor-list">
+                <div class="donor-detail">
+                   <div class="donor-brief-info">
+                    <p class="donor-detail-name"><strong>Name :</strong> <%=donor.name%></p>
+                    <p class="donor-detail-group"><strong>Group :</strong> <%=donor.group%></p>
+                    <p class="donor-detail-phone"><strong>Phone No.:</strong> +91 <%=donor.ph%></p>
+                    <p class="donor-detail-city"><strong>City :</strong> <%=donor.city%></p>
+                    </div>
+                    <div>
+                    <a class="anchor-tag" href="http://localhost:3000/home/find/<%=donor.id%>/detail">See Detail</a>
+                    <a class="anchor-tag" href="http://localhost:3000/home/find/<%=donor.id%>/edit">Edit</a>
+                    <form method="post" action="/home/find/<%=donor.id%>?_method=DELETE">
+                        <button class="anchor-tag" type="submit">Delete</button>
+                    </form>
+                    </div>
+                   </div>
+                </div>
+        <% } %>
+
+
+        <!-- <div class="donor-list">
                 <div class="donor-detail">
                     <div class="donor-brief-info">
                     <p class="donor-detail-name"><strong>Name :</strong> Priyam Pratim Baishya</p>
@@ -111,7 +137,7 @@
 
                 <br>
                 
-            </div>
+            </div> -->
 
 
     </div>

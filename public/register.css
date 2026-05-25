@@ -90,10 +90,10 @@
     padding: 1rem 1rem;
 }
 
-.form-list-demo .form .form-input{
+/* .form-list-demo .form .form-input{
     background-color: #9D0208;
     height: 200px;
-}
+} */
 
 
 .form-list-demo .form .input{
@@ -152,33 +152,21 @@
     font-weight: 500;
 }
 
-.donor-detail-3{
-    border: 2px solid transparent;
-    border-radius: 5px;
-    /* background-color: yellow; */
-    height: 200px;
-    width: 55vw;
-    margin: 1rem;
-    padding: 1rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 1.25rem;
-    font-weight: 500;
-}
+.anchor-tag{
+    text-decoration: none;
+    color: #DC2F02;
+    margin-right: 15px;
+    font-size: 23px;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+ }
 
-.donor-detail-3-add{
-    border: 2px solid rgba(255, 0, 0, 0.5);
-    border-radius: 5px;
-    /* background-color: yellow; */
-    height: 200px;
-    width: 55vw;
-    margin: 1rem;
-    padding: 1rem 1rem;
+ form{
+    display: inline-block;
+ }
+
+ .register-page-list-option{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 1.25rem;
-    font-weight: 500;
-}
+ }
 

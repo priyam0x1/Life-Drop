@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit <%=donor.name%>'s Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/edit.css">
+</head>
+<body>
+    <h1>Edit <%=donor.name%>'s Details</h1>
+            <div class="form">
+                <form method="post" action="/home/find/<%=donor.id%>?_method=PATCH">
+                <label for="name">Name : </label>
+                <input type="text" id="name" class="donor-name input" value="<%=donor.name%>" name="name">
+                <label for="group">Group : </label>
+                <input type="text" id="group" class="blood-group input" value="<%=donor.group%>" name="group">
+                <label for="ph">Phone : </label>
+                <input type="text" id="ph" class="phone-no input" value="<%=donor.ph%>" name="ph">
+                <label for="city"><pre>      City :</pre></label>
+                <input type="text" id="city" class="city input" value="<%=donor.city%>" name="city">
+                <button type="submit" id="register">Edit Details</button>
+                </form>
+            </div>
+</body>
+</html>

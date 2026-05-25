@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="/register.css">
 </head>
 <body>
     <div class="register-page">
@@ -21,10 +21,10 @@
             </div>
 
             <div class="nav-option-container">
-            <a href="index.html" class="nav-option">Home</a>
-            <a href="about.html" class="nav-option">About Us</a>
-            <a href="find.html" class="nav-option">Find Blood</a>
-            <a href="#" class="nav-option active">Register</a>
+            <a href="http://localhost:3000/home" class="nav-option">Home</a>
+            <a href="http://localhost:3000/home/about" class="nav-option">About Us</a>
+            <a href="http://localhost:3000/home/find" class="nav-option">Find Blood</a>
+            <a href="http://localhost:3000/home/register" class="nav-option active">Register</a>
             <a href="#" class="nav-option login">Login</a>
             </div>
         </div>
@@ -35,39 +35,40 @@
         <div class="form-list-demo">
             <div class="form">
                 <h1 style="color: red;">Become a Donor</h1>
-                <input type="text" class="donor-name input" placeholder="Donor Name">
-                <input type="text" class="blood-group input" placeholder="Blood Group">
-                <input type="text" class="phone-no input" placeholder="Phone Number">
-                <input type="text" class="city input" placeholder="City">
-                <button id="register">Register Donor</button>
+                <form autocomplete="off" method="post" action="/home/find">
+                <input type="text" class="donor-name input" placeholder="Donor Name" name="name" required>
+                <input type="text" class="blood-group input" placeholder="Blood Group" name="group" required>
+                <input type="text" class="phone-no input" placeholder="Phone Number" name="ph" required>
+                <input type="text" class="city input" placeholder="City" name="city" required>
+                <button type="submit" id="register">Register Donor</button>
+                </form>
             </div>
             
 
         <!-- Reister Page || Blood List Demo -->
 
-
+            
             <div class="list-demo">
                 <div class="donor-detail">
-                    <p class="donor-detail-name"><strong>Name :</strong> Priyam Pratim Baishya</p>
-                    <p class="donor-detail-group"><strong>Group :</strong> AB+</p>
-                    <p class="donor-detail-phone"><strong>Phone No.:</strong> +91 8787878787</p>
+                    <p class="donor-detail-name"><strong>Name :</strong> Priyam Pratim</p>
+                    <p class="donor-detail-group"><strong>Group :</strong> A+</p>
+                    <p class="donor-detail-phone"><strong>Phone No.:</strong> +91 8723895806</p>
                     <p class="donor-detail-city"><strong>City :</strong> Nalbari</p>
                 </div>
                 <div class="donor-detail">
                     <p class="donor-detail-name"><strong>Name :</strong> Hritisman Baishya</p>
                     <p class="donor-detail-group"><strong>Group :</strong> O-</p>
-                    <p class="donor-detail-phone"><strong>Phone No.:</strong> +91 7878787878</p>
+                    <p class="donor-detail-phone"><strong>Phone No.:</strong> +91 6003046039</p>
                     <p class="donor-detail-city"><strong>City :</strong> Rangia</p>
                 </div>
-                <div class="donor-detail-3">
-                    <p class="donor-detail-name-3"></p>
-                    <p class="donor-detail-group-3"></p>
-                    <p class="donor-detail-phone-3"></p>
-                    <p class="donor-detail-city-3"></p>
+                <div class="donor-detail">
+                    <p class="donor-detail-name"><strong>Name :</strong> Manimugdha Upanash</p>
+                    <p class="donor-detail-group"><strong>Group :</strong> B-</p>
+                    <p class="donor-detail-phone"><strong>Phone No.:</strong> +91 9874575421</p>
+                    <p class="donor-detail-city"><strong>City :</strong> Barpeta</p>
                 </div>
             </div>
-            </div>
-            
+            </div>          
 
         </div> <!-- atu div form & list r, except navbar -->
 
